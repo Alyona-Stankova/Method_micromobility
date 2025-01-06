@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "blocksnet"
-version = "0.0.11"
+version = "0.0.12"
 authors = [
-    # { name = "", email = "" }, # TODO add authors
+    # { name = "Alyona", email = "Stankova" }, # TODO add authors
 ]
 description = "Package provides methods of master plan requirements automated generation for urban areas"
 readme = "README.rst"
