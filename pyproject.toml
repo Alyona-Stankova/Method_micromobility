@@ -11,7 +11,6 @@ authors = [
 description = "Method for integrating infrastructure for micro mobility into an urban environment"
 readme = "README.rst"
 requires-python = ">=3.10"
-license = { file = "LICENCE.md" }
 
 dependencies = [
     "geopandas>=0.13.0,<1.0.0",
