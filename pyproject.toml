@@ -8,7 +8,7 @@ version = "0.0.12"
 authors = [
     # { name = "Alyona", email = "Stankova" }, # TODO add authors
 ]
-description = "Package provides methods of master plan requirements automated generation for urban areas"
+description = "Method for integrating infrastructure for micro mobility into an urban environment"
 readme = "README.rst"
 requires-python = ">=3.10"
 license = { file = "LICENCE.md" }
