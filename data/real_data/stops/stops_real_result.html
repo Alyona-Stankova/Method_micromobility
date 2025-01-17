@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8f5468eb79064eb90d222144618dbcb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8f5468eb79064eb90d222144618dbcb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8f5468eb79064eb90d222144618dbcb = L.map(
+                "map_a8f5468eb79064eb90d222144618dbcb",
+                {
+                    center: [59.857728200000004, 30.306347678947372],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_388616a8a349802c024e885573028b81 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_388616a8a349802c024e885573028b81.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+    
+            var tile_layer_acda6ffe6ac952a596cc43bffe5a980b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_acda6ffe6ac952a596cc43bffe5a980b.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+    
+            var feature_group_4fc1b1211eabf2541fc598f39f6d6850 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_0e1cd65fac807ff66f419241c7e5abc8 = L.circleMarker(
+                [59.8604808, 30.3049506],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_0e1cd65fac807ff66f419241c7e5abc8.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c3750a7fe127fd30f5ec7e638125a3c = L.circleMarker(
+                [59.8608514, 30.3053941],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_7c3750a7fe127fd30f5ec7e638125a3c.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d172c918e915a8a0a2302111c0806de = L.circleMarker(
+                [59.8534768, 30.304667],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_5d172c918e915a8a0a2302111c0806de.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fa6580cb97a181f818966b1ff367e30 = L.circleMarker(
+                [59.8535592, 30.3050915],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_0fa6580cb97a181f818966b1ff367e30.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f0a7dbe5ab513716912ae9e7bd8bfc8 = L.circleMarker(
+                [59.8534148, 30.3023969],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_8f0a7dbe5ab513716912ae9e7bd8bfc8.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97db7622bd2c3591cc182863286595de = L.circleMarker(
+                [59.8522065, 30.3128084],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_97db7622bd2c3591cc182863286595de.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcad70332b7282a117015457750e6f09 = L.circleMarker(
+                [59.8564019, 30.3047709],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_fcad70332b7282a117015457750e6f09.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8989a6a3e4911e22f420fd99c4b7142a = L.circleMarker(
+                [59.856872, 30.3052468],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_8989a6a3e4911e22f420fd99c4b7142a.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6aab5296f3f21a17092a71e3a7e80a56 = L.circleMarker(
+                [59.8536491, 30.3015616],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_6aab5296f3f21a17092a71e3a7e80a56.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3892a3805b5f5cce0fd3373767bfd19a = L.circleMarker(
+                [59.8573755, 30.2945234],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_3892a3805b5f5cce0fd3373767bfd19a.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_154688ae0324b4841f9f3ba934b26571 = L.circleMarker(
+                [59.8552487, 30.2990563],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_154688ae0324b4841f9f3ba934b26571.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ca5d3cc6f173359e4884f6df925f8ff = L.circleMarker(
+                [59.8549713, 30.2991149],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_0ca5d3cc6f173359e4884f6df925f8ff.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2ae9ea1835685417679618ec2fdc7bd = L.circleMarker(
+                [59.8545097, 30.3208357],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_e2ae9ea1835685417679618ec2fdc7bd.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8adab8dfddafcb684ea185bf4f5660c = L.circleMarker(
+                [59.8577903, 30.3207282],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_d8adab8dfddafcb684ea185bf4f5660c.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d33b248d33939112724710bba5f3b4c3 = L.circleMarker(
+                [59.8612785, 30.3204742],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_d33b248d33939112724710bba5f3b4c3.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b7196171bcf3c442fb6ceb468450e6d = L.circleMarker(
+                [59.8613217, 30.2948598],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_2b7196171bcf3c442fb6ceb468450e6d.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3bf68dfbff3d75f5bccb60c0b846f9b6 = L.circleMarker(
+                [59.8642909, 30.3051275],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_3bf68dfbff3d75f5bccb60c0b846f9b6.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbecbf992cf8dc77ba955dfbf4cb3078 = L.circleMarker(
+                [59.864534, 30.3058261],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_bbecbf992cf8dc77ba955dfbf4cb3078.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_455d3f239f09c15d87fcfb4db98117ee = L.circleMarker(
+                [59.8646027, 30.313172],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4fc1b1211eabf2541fc598f39f6d6850);
+        
+    
+            circle_marker_455d3f239f09c15d87fcfb4db98117ee.bindTooltip(
+                `<div>
+                     Парковочные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_4fc1b1211eabf2541fc598f39f6d6850.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+    
+            var feature_group_818d0cb9a3273e580514993028d922a9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_39b6162cd64b4845ce4486a0d1642875 = L.circleMarker(
+                [59.8604808, 30.3049506],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_39b6162cd64b4845ce4486a0d1642875.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c16d392c245b57e03149de57aa90b664 = L.circleMarker(
+                [59.8608514, 30.3053941],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_c16d392c245b57e03149de57aa90b664.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c037afe3f941948bcf5d0073cf9f0de2 = L.circleMarker(
+                [59.8534768, 30.304667],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_c037afe3f941948bcf5d0073cf9f0de2.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a7a424f4a142f0bb6ff3405b4a95ae3 = L.circleMarker(
+                [59.8535592, 30.3050915],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_4a7a424f4a142f0bb6ff3405b4a95ae3.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dce8816663343ffdf6af43deb9202f22 = L.circleMarker(
+                [59.8534148, 30.3023969],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_dce8816663343ffdf6af43deb9202f22.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_558d4983ec0e5f05e663a4535c698f5c = L.circleMarker(
+                [59.8522065, 30.3128084],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_558d4983ec0e5f05e663a4535c698f5c.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0ba06b0e1530b09fbb26ca6f0b375db = L.circleMarker(
+                [59.8564019, 30.3047709],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_a0ba06b0e1530b09fbb26ca6f0b375db.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3455182d75aa133a02912236af8c62e9 = L.circleMarker(
+                [59.856872, 30.3052468],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_3455182d75aa133a02912236af8c62e9.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca87fc723dd9bab1d1117b29c8dd5dc4 = L.circleMarker(
+                [59.8536491, 30.3015616],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_ca87fc723dd9bab1d1117b29c8dd5dc4.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53b332618cf5dd1cdf102334ed8b8f31 = L.circleMarker(
+                [59.8573755, 30.2945234],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_53b332618cf5dd1cdf102334ed8b8f31.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76d748c0d28826c12eb613760554a5e9 = L.circleMarker(
+                [59.8552487, 30.2990563],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_76d748c0d28826c12eb613760554a5e9.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f83ed1e57cb28b2aff9dd812d43ada8 = L.circleMarker(
+                [59.8549713, 30.2991149],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_1f83ed1e57cb28b2aff9dd812d43ada8.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64d1bcadd82aed7b739d58a84bd98410 = L.circleMarker(
+                [59.8545097, 30.3208357],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_64d1bcadd82aed7b739d58a84bd98410.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b322522f07a4b104d589ca332216c9d3 = L.circleMarker(
+                [59.8577903, 30.3207282],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_b322522f07a4b104d589ca332216c9d3.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8e5b6c6dda528524fffdc183a309e34 = L.circleMarker(
+                [59.8612785, 30.3204742],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_c8e5b6c6dda528524fffdc183a309e34.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e5de4374519ebbce13ade47328855b8 = L.circleMarker(
+                [59.8613217, 30.2948598],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_0e5de4374519ebbce13ade47328855b8.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2330f25cbd8f99618197faf47970dd3 = L.circleMarker(
+                [59.8642909, 30.3051275],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_b2330f25cbd8f99618197faf47970dd3.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5f32d6073893da15ca880e8afca21d8 = L.circleMarker(
+                [59.864534, 30.3058261],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_c5f32d6073893da15ca880e8afca21d8.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_131818b4100766b74810c6b2718c9ab6 = L.circleMarker(
+                [59.8646027, 30.313172],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_818d0cb9a3273e580514993028d922a9);
+        
+    
+            circle_marker_131818b4100766b74810c6b2718c9ab6.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_818d0cb9a3273e580514993028d922a9.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+    
+            var layer_control_65253d01e04a497464c5e51e28ad6823_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_388616a8a349802c024e885573028b81,
+                    "cartodbpositron" : tile_layer_acda6ffe6ac952a596cc43bffe5a980b,
+                },
+                overlays :  {
+                    "\u041f\u0430\u0440\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430" : feature_group_4fc1b1211eabf2541fc598f39f6d6850,
+                    "\u0417\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430" : feature_group_818d0cb9a3273e580514993028d922a9,
+                },
+            };
+            let layer_control_65253d01e04a497464c5e51e28ad6823 = L.control.layers(
+                layer_control_65253d01e04a497464c5e51e28ad6823_layers.base_layers,
+                layer_control_65253d01e04a497464c5e51e28ad6823_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a8f5468eb79064eb90d222144618dbcb);
+
+        
+    
+            tile_layer_388616a8a349802c024e885573028b81.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+    
+            tile_layer_acda6ffe6ac952a596cc43bffe5a980b.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+    
+            feature_group_4fc1b1211eabf2541fc598f39f6d6850.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+    
+            feature_group_818d0cb9a3273e580514993028d922a9.addTo(map_a8f5468eb79064eb90d222144618dbcb);
+        
+</script>
+</html>

@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "metro_osm_result",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Московские ворота", "парковочные_места_СИМ": 20, "зарядные_места_СИМ": 2.0 }, "geometry": { "type": "Point", "coordinates": [ 30.318071, 59.892649299999988 ] } },
+{ "type": "Feature", "properties": { "name": "Электросила", "парковочные_места_СИМ": 20, "зарядные_места_СИМ": 2.0 }, "geometry": { "type": "Point", "coordinates": [ 30.3190724, 59.8802598 ] } },
+{ "type": "Feature", "properties": { "name": "Купчино", "парковочные_места_СИМ": 20, "зарядные_места_СИМ": 2.0 }, "geometry": { "type": "Point", "coordinates": [ 30.3754914, 59.8296814 ] } },
+{ "type": "Feature", "properties": { "name": "Парк Победы", "парковочные_места_СИМ": 20, "зарядные_места_СИМ": 2.0 }, "geometry": { "type": "Point", "coordinates": [ 30.3214922, 59.867618299999982 ] } },
+{ "type": "Feature", "properties": { "name": "Звёздная", "парковочные_места_СИМ": 20, "зарядные_места_СИМ": 2.0 }, "geometry": { "type": "Point", "coordinates": [ 30.3514616, 59.8328763 ] } },
+{ "type": "Feature", "properties": { "name": "Московская", "парковочные_места_СИМ": 20, "зарядные_места_СИМ": 2.0 }, "geometry": { "type": "Point", "coordinates": [ 30.3223819, 59.8514032 ] } }
+]
+}
