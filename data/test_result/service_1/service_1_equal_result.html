@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf9a063b171580e3780b81662d63c0d7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bf9a063b171580e3780b81662d63c0d7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bf9a063b171580e3780b81662d63c0d7 = L.map(
+                "map_bf9a063b171580e3780b81662d63c0d7",
+                {
+                    center: [59.853662774462144, 30.303545171888903],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93649dc0285e780a5b5c234916df2848 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_93649dc0285e780a5b5c234916df2848.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            var tile_layer_0e9f358aa525a172d3874f8728e16658 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0e9f358aa525a172d3874f8728e16658.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            var feature_group_bc7657f62ce8c67f14617b8fe67ad79a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_993abe68ab917e2557d857026cc977ce = L.circleMarker(
+                [59.85290608933578, 30.301149218482895],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bc7657f62ce8c67f14617b8fe67ad79a);
+        
+    
+            circle_marker_993abe68ab917e2557d857026cc977ce.bindTooltip(
+                `<div>
+                     Парковочные места: (85, nan)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a65dc70995ca6e29e461f582160c934 = L.circleMarker(
+                [59.85375774596897, 30.303021192755192],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bc7657f62ce8c67f14617b8fe67ad79a);
+        
+    
+            circle_marker_5a65dc70995ca6e29e461f582160c934.bindTooltip(
+                `<div>
+                     Парковочные места: (52, nan)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d97a5c7218255772a4e6477d331653f = L.circleMarker(
+                [59.854324488081666, 30.30646510442863],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BFA181", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bc7657f62ce8c67f14617b8fe67ad79a);
+        
+    
+            circle_marker_4d97a5c7218255772a4e6477d331653f.bindTooltip(
+                `<div>
+                     Парковочные места: (9, nan)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_bc7657f62ce8c67f14617b8fe67ad79a.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            var feature_group_ca7b442d29e936d97531f43265942f86 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_37a7b3799085e4d9176a4312fa2e34fa = L.circleMarker(
+                [59.85290608933578, 30.301149218482895],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca7b442d29e936d97531f43265942f86);
+        
+    
+            circle_marker_37a7b3799085e4d9176a4312fa2e34fa.bindTooltip(
+                `<div>
+                     Зарядные места: 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b53ccaf84ffdc62526e7cfc57ca5a144 = L.circleMarker(
+                [59.85375774596897, 30.303021192755192],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca7b442d29e936d97531f43265942f86);
+        
+    
+            circle_marker_b53ccaf84ffdc62526e7cfc57ca5a144.bindTooltip(
+                `<div>
+                     Зарядные места: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e453c27385ad516ade046dcf0a5cfed3 = L.circleMarker(
+                [59.854324488081666, 30.30646510442863],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A1828", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca7b442d29e936d97531f43265942f86);
+        
+    
+            circle_marker_e453c27385ad516ade046dcf0a5cfed3.bindTooltip(
+                `<div>
+                     Зарядные места: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_ca7b442d29e936d97531f43265942f86.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            var feature_group_295b927e287822d6ea910e0e7228b92c = L.featureGroup(
+                {
+}
+            );
+        
+    
+
+        function geo_json_0a70171284505bcec916e0614537ae71_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0a70171284505bcec916e0614537ae71 = L.geoJson(null, {
+                onEachFeature: geo_json_0a70171284505bcec916e0614537ae71_onEachFeature,
+            
+            ...{
+  "fill": true,
+  "fillColor": "#96C2DB",
+  "fillOpacity": 0.5,
+}
+        });
+
+        function geo_json_0a70171284505bcec916e0614537ae71_add (data) {
+            geo_json_0a70171284505bcec916e0614537ae71
+                .addData(data);
+        }
+            geo_json_0a70171284505bcec916e0614537ae71_add({"coordinates": [[[30.30073389747269, 59.852995265043894], [30.300718227545808, 59.85353827376431], [30.301031626083393, 59.85359336111045], [30.30158790848761, 59.853325793146404], [30.30158790848761, 59.85325496597225], [30.301658423158564, 59.85325103112481], [30.301650588195123, 59.85232239411912], [30.30032647937382, 59.85231845916141], [30.300302974483497, 59.852353873764], [30.300177615068467, 59.852349938810015], [30.300146275214704, 59.85248372698438], [30.301298014840345, 59.85249159686024], [30.301305849803786, 59.853073962508944], [30.30073389747269, 59.852995265043894]]], "type": "Polygon"});
+        geo_json_0a70171284505bcec916e0614537ae71.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_0a70171284505bcec916e0614537ae71.bindTooltip(
+                `<div>
+                     Адрес: пр. Ленинский 160
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            geo_json_0a70171284505bcec916e0614537ae71.addTo(feature_group_295b927e287822d6ea910e0e7228b92c);
+        
+    
+
+        function geo_json_be6292a7de687989dd4916328315d759_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_be6292a7de687989dd4916328315d759 = L.geoJson(null, {
+                onEachFeature: geo_json_be6292a7de687989dd4916328315d759_onEachFeature,
+            
+            ...{
+  "fill": true,
+  "fillColor": "#96C2DB",
+  "fillOpacity": 0.5,
+}
+        });
+
+        function geo_json_be6292a7de687989dd4916328315d759_add (data) {
+            geo_json_be6292a7de687989dd4916328315d759
+                .addData(data);
+        }
+            geo_json_be6292a7de687989dd4916328315d759_add({"coordinates": [[[30.30241057964877, 59.85409701261792], [30.302293055197183, 59.85409307787006], [30.302293055197183, 59.85411275160469], [30.302034501403675, 59.85412455583988], [30.30186996717144, 59.85403799135122], [30.30209718111119, 59.853880600794874], [30.30212852096495, 59.8538451878171], [30.302434084539097, 59.85368386155253], [30.303374280151857, 59.85367599195864], [30.303382115115298, 59.85364844836536], [30.303319435407776, 59.85364057876311], [30.303342940298098, 59.85343990327654], [30.30349180460345, 59.85336514151131], [30.303577989201276, 59.85336514151131], [30.303773863287276, 59.85345564257413], [30.303789533214157, 59.85364451356448], [30.303695513652887, 59.85365631796577], [30.303687678689446, 59.85366812236289], [30.303836542994798, 59.85366812236289], [30.303836542994798, 59.85382551392427], [30.303883552775424, 59.85383731826136], [30.303883552775424, 59.85393568757427], [30.303593659128158, 59.853927818039935], [30.3036014940916, 59.85378616610372], [30.302551608990694, 59.85380190523751], [30.30234006497781, 59.85390814419597], [30.30234006497781, 59.853959296166096], [30.30241057964877, 59.853959296166096], [30.30241057964877, 59.85409701261792]]], "type": "Polygon"});
+        geo_json_be6292a7de687989dd4916328315d759.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_be6292a7de687989dd4916328315d759.bindTooltip(
+                `<div>
+                     Адрес: пл. Конституции 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            geo_json_be6292a7de687989dd4916328315d759.addTo(feature_group_295b927e287822d6ea910e0e7228b92c);
+        
+    
+
+        function geo_json_66580275a78a004a1b3ee808da1838d0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_66580275a78a004a1b3ee808da1838d0 = L.geoJson(null, {
+                onEachFeature: geo_json_66580275a78a004a1b3ee808da1838d0_onEachFeature,
+            
+            ...{
+  "fill": true,
+  "fillColor": "#96C2DB",
+  "fillOpacity": 0.5,
+}
+        });
+
+        function geo_json_66580275a78a004a1b3ee808da1838d0_add (data) {
+            geo_json_66580275a78a004a1b3ee808da1838d0
+                .addData(data);
+        }
+            geo_json_66580275a78a004a1b3ee808da1838d0_add({"coordinates": [[[30.306326102627747, 59.85448851770325], [30.306602285088996, 59.85448950137856], [30.306604243829856, 59.85416095220537], [30.306328061368607, 59.85415898483528], [30.306326102627747, 59.85448851770325]]], "type": "Polygon"});
+        geo_json_66580275a78a004a1b3ee808da1838d0.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_66580275a78a004a1b3ee808da1838d0.bindTooltip(
+                `<div>
+                     Адрес: пр. Новоизмайловский 46 корп. 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            geo_json_66580275a78a004a1b3ee808da1838d0.addTo(feature_group_295b927e287822d6ea910e0e7228b92c);
+        
+    
+            feature_group_295b927e287822d6ea910e0e7228b92c.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            var layer_control_4bc8b9febe2601467396a364eb394930_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_93649dc0285e780a5b5c234916df2848,
+                    "cartodbpositron" : tile_layer_0e9f358aa525a172d3874f8728e16658,
+                },
+                overlays :  {
+                    "\u041f\u0430\u0440\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430" : feature_group_bc7657f62ce8c67f14617b8fe67ad79a,
+                    "\u0417\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430" : feature_group_ca7b442d29e936d97531f43265942f86,
+                    "\u0421\u0435\u0440\u0432\u0438\u0441_1" : feature_group_295b927e287822d6ea910e0e7228b92c,
+                },
+            };
+            let layer_control_4bc8b9febe2601467396a364eb394930 = L.control.layers(
+                layer_control_4bc8b9febe2601467396a364eb394930_layers.base_layers,
+                layer_control_4bc8b9febe2601467396a364eb394930_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_bf9a063b171580e3780b81662d63c0d7);
+
+        
+    
+            tile_layer_93649dc0285e780a5b5c234916df2848.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            tile_layer_0e9f358aa525a172d3874f8728e16658.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            feature_group_bc7657f62ce8c67f14617b8fe67ad79a.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            feature_group_ca7b442d29e936d97531f43265942f86.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+    
+            geo_json_0a70171284505bcec916e0614537ae71.addTo(feature_group_295b927e287822d6ea910e0e7228b92c);
+        
+    
+            geo_json_be6292a7de687989dd4916328315d759.addTo(feature_group_295b927e287822d6ea910e0e7228b92c);
+        
+    
+            geo_json_66580275a78a004a1b3ee808da1838d0.addTo(feature_group_295b927e287822d6ea910e0e7228b92c);
+        
+    
+            feature_group_295b927e287822d6ea910e0e7228b92c.addTo(map_bf9a063b171580e3780b81662d63c0d7);
+        
+</script>
+</html>
